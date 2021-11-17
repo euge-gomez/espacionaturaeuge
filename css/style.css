@@ -1,0 +1,252 @@
+/*  
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Calibri;
+    user-select: none;
+}
+    Al ser la edicion de todas las sesiones, armare primero el header y footer y despues me ocupare de los pormenores de cada main 
+    Header General 
+header {
+    background-image: url(../images/verde1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 50px;
+    height: 150px;
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: #F53D00;
+}
+section.head__logos div {
+    display: inline-block;
+}
+img.head__logonatura {
+    position: absolute;
+    left: 1000px;
+    top: 20px;
+    height: 100px;
+    width: 100px;
+}
+div.head__yo {
+    height: 287px;
+}
+img.head__fotoyo {
+    margin: 15px;
+    height: 120px;
+    width: 100px;
+}
+h2.head__tituloyo {
+    position: relative;
+    left: 150px;
+    top: -160px;
+    font-size: 32px;
+    color: #F53D00;
+    background-color: rgba(24, 126, 11, 0.9);
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 10px;
+    text-shadow: 0 0 15px black;
+}
+div.head__nav ul {
+    padding: 30px;
+    position: absolute;
+    top: 0px;
+    left: 400px;
+    list-style: none;
+    font-size: 18px;
+    text-shadow: 0 0 2px black;
+}
+li {
+    float: left;
+    padding: 20px;
+    background-color: rgba(24, 126, 11, 0.9);
+    border-radius: 20px;
+    font-weight: bold;
+}
+hr {
+    clear: both;
+}
+Footer general
+footer {
+    background-image: url(../images/verde1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 130px;
+    height: 150px;
+}
+.foot__nav ul {
+    padding: 30px;
+    list-style: none;
+    font-size: 18px;
+    text-shadow: 0 0 2px black;
+}
+.foot__navrrss ul {
+    padding: 30px;
+    position: relative;
+    top: -100px;
+    left: 750px;
+    list-style: none;
+    font-size: 18px;
+    text-shadow: 0 0 2px black;
+}
+Home 
+div.causas__intro {
+    border: 10px double #F53D00;
+    border-radius: 20px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 15px;
+}
+h1.causas__whytitulo, h1 {
+    color:#F53D00;
+    font-size: 48px;
+    margin-left: 100px;
+
+}
+div.causas__whycontent1, div.causas__whycontent2 {
+    background-color: rgba(24, 126, 11, 0.7);
+    display: flex;
+    margin: 15px 0;
+    width: 70%;
+}
+div article.causas__whytxt1, div article.causas__whytxt2 {
+width: 50%;
+padding: auto;
+margin: 15px;
+text-align: center;
+align-items: center;
+font-size: 18px;
+}
+iframe {
+    padding: 50px 0;
+}
+.accesosmasclaros__nav {
+    position: absolute;
+    top: 600px;
+    left: 1000px;
+}
+.accesosmasclaros__nav ul li{
+    float: none;
+    display: block;
+    list-style-type: none;
+    padding: 50PX;
+    margin: 5px;
+}
+Ciclo Actual
+div.cicloactual__intro {
+    background-color: rgba(24, 126, 11, 0.7);
+    text-shadow: 1px 1px 2px black;
+    height: 222px;
+}
+h1.cicloactual__titulo {
+    float: right;
+    width: 50%;
+}
+div.cicloactual__link {
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;
+}
+div.cicloactual__imperdibles {
+    text-align: center;
+    justify-items: center;
+}
+.cicloactual__imperdibles img {
+    margin: 10px;
+    border:black 2px solid;
+}
+.cicloactual__imperdibles h2, .contacto__intro h2, .online__linkexterno h2, .online__introcupones h2 {
+    font-size: 32px;
+}
+.accesosmasclaros nav ul {  
+    list-style-type: none;
+    margin: 15px;
+}
+.accesosmasclaros nav ul li {
+    margin: 15px;
+}
+Contacto
+.contacto__main {
+    display: inline-block;
+}
+.contacto__intro h1 {
+    text-align: center;
+}
+.contacto__formulario, .contacto__intro {
+    width: 50%;
+    margin: 50px;
+}
+.contacto__formulario {
+    position: absolute;
+    top: 300px;
+    left: 500px;
+}
+Online
+section.online__introcasa h1, .pronta__intro h1 {
+    text-shadow: 1px 1px 2px black;
+}
+section.online__introcasa {
+    background-color: rgba(24, 126, 11, 0.7);
+    text-align: center;
+    height: 200px;
+}
+section.online__introcupones, section.online__linkexterno {
+    width: 50%;
+    display: inline-block;
+    margin: 20px;
+}
+section.online__linkexterno {
+    position: absolute;
+    top: 400px;
+    left: 700px;
+}
+.online__linkexterno a {
+    font-size: 32px;
+}
+Pronta Entrega 
+.pronta__intro {
+    text-align: center;
+}
+.pronta__intro p {
+    font-weight: bold;
+    border: #F53D00 2px solid;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 24px;
+}
+section.galeria {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+h2.galeria__titulo {
+    margin: 20px;
+    font-size: 32px;
+    text-decoration: underline;
+}
+.galeria h3 {
+    margin: 20px;
+    color: #F53D00;
+    font-size: 24px;
+}
+.galeria p {
+    width: 250px;
+    text-align: center;
+    background-color: rgba(24, 126, 11, 0.7);
+}
+.galeria img {
+    padding: 20px;
+}
+*/
