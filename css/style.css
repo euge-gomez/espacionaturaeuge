@@ -37,13 +37,7 @@ a {
     margin-left: 30px;
 }
 .head__fotoyo {
-    width: 100%;
-}
-h2.head__tituloyo {
-    font-size: 42px;
-    color: #F53D00;
-    padding: 10px;
-    text-shadow: 0 0 15px black;
+    width: 80%;
 }
 .head__natura {
     grid-area: natura;
@@ -71,7 +65,7 @@ div.head__nav ul {
     font-weight: bold;
     padding: 5px;
 }
-/* FlexBox Foot */
+/* Grid Foot */
 footer {
     display: grid;
     grid-template-areas: "nav2 navrrss";
@@ -334,16 +328,16 @@ h2.galeria__titulo {
     padding: 20px;
 }
 /* Pronta Final */
-/* M]edia tablet */
+/* Media tablet */
 @media only screen and (min-width:769px) and (max-width:1024px) {
     a {
         font-size: 18px; 
     } 
     .head {
         display: grid;
-        grid-template-areas: "euge euge natura"
-                            ". nav1 nav1";
-        grid-template-columns: 25% 50% auto;
+        grid-template-areas: "euge  natura"
+                            ".  nav1";
+        grid-template-columns: 50% auto;
         background-size: cover;
         width: 100%;
     }
@@ -412,7 +406,7 @@ h2.galeria__titulo {
     /* Online Final */
 }
 /* Media Mobile */
-@media only screen and (min-width:400px) and (max-width:768px) {
+@media only screen and (min-width:0px) and (max-width:768px) {
     /* Grid Head */
     .head {
         display: grid;
@@ -521,4 +515,3 @@ h2.galeria__titulo {
         margin-left: 0px;
     }
 }
-/* Media  Mini jajaja (mi celu no se como poenrlo */
