@@ -277,8 +277,10 @@ input {
 .online__introcasa p {
     margin: 20px;
     padding: 15px;
-    background-color: rgba(24, 126, 11, 0.7);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgb(91 137 24) 35%);
     text-align: center;
+    border: solid 1px white;
+    border-radius: 20px;
 }
 .online__introcupones {
     grid-area: cupones;
@@ -322,7 +324,7 @@ h2.galeria__titulo {
 .galeria p {
     width: 250px;
     text-align: center;
-    background-color: rgba(24, 126, 11, 0.7);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(91,137,24,1) 35%);
 }
 .galeria img {
     padding: 20px;
@@ -515,3 +517,24 @@ h2.galeria__titulo {
         margin-left: 0px;
     }
 }
+/* Animaciones */
+@keyframes intro {
+    0%   {background-color: #F53D00;}
+    25%  {background-color: #F08B08;}
+    50%  {background-color: #FAD41A;}
+    75% {background-color: #FAEDA7;}
+    100% {background-color: white;}
+}
+.causas__intro {
+    animation-name: intro;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+}
+div.cicloactual__link {
+transition: width 2s, height 2s, transform 2s;
+}
+div.cicloactual__link:hover {
+transform: rotate(360deg);
+}
+
