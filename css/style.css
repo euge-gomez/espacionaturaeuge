@@ -1,87 +1,44 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body {
     font-family: Calibri;
     user-select: none;
 }
 /* Media Desktop lo dejo sin poner media para que lo tome como el general y sobre las excepciones cargo modificaciones*/
-/* Grid Head */
+/* Head */
 .head {
-    display: grid;
-    grid-template-areas: "euge . natura"
-                        ". nav1 .";
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 65% 35%;
-    height: 270px;
     background: rgba(0, 0, 0, 0.12) url(../images/verde1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    width: 100%;
     background-blend-mode: multiply;
 }
 a {
-    text-decoration: none;
-    color: #F53D00;
-    font-size: 24px;
+    color: #f53d00;
 }
-.head__yo {
-    grid-area: euge;
+div.head__nav {
     display: flex;
-    justify-content: center;
-    margin-top: 15px;
-    margin-left: 30px;
-}
-.head__fotoyo {
-    width: 80%;
-}
-.head__natura {
-    grid-area: natura;
-}
-.head__logonatura {
-    height: 80%;
-    margin: 15px 60px;
-}
-.head__nav {
-    grid-area: nav1;
-    justify-content: left;
-}
-.head__nav--none {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
 }
 div.head__nav ul {
-    font-size: 18px;
+    font-size: 24px;
     text-shadow: 0 0 1px black;
+    justify-self: center; 
 }
-.head__nav li, .foot__nav li {
+.head__nav li, .foot__nav li, .foot__navrrss li {
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 20px;
     font-weight: bold;
-    padding: 5px;
+    margin: 15px 0;
 }
-/* Grid Foot */
-footer {
-    display: grid;
-    grid-template-areas: "nav2 navrrss";
-    grid-template-columns: 50% auto;
-    grid-template-rows: auto;
+/* /Head */
+/* Foot */
+.foot {
+    height: max-content;
     background-image: url(../images/verde1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-}
-.foot__nav {
-    grid-area: nav2;
-}
-.foot__navrrss {
-    grid-area: navrrss;
+    align-content: center;
 }
 .foot__nav, .foot__navrrss {
     list-style-type: none;
@@ -94,179 +51,76 @@ footer {
     display: flex;
     justify-content: space-around;
 }
-.foot__nav ul {
-    list-style-type: none;
-    display: flex;
-}
+/* /Foot */
 /* Home Inicio */
-/* Grid Main */
-.gridmain {
-    display: grid;
-    grid-template-areas: "intro intro"
-                        "causas accesos";
-    grid-template-columns: 75% 25%;
-    grid-template-rows: 20% 80%;
-}
-.causas__intro {
-    grid-area: intro;
-}
-.causas {
-    grid-area: causas;
-}
-.accesosmasclaros__home {
-    grid-area: accesos;
-    margin-top: 150px;
-}
-.causas__why {
-    display: flex;
-    flex-direction: column;
-}
 .causas__whycontent1, .causas__whycontent2 {
     display: flex;
     flex-direction: row;
     background-color: rgba(24, 126, 11, 0.7);
     justify-content: center;
     align-items: center;
-    margin: 5px;
     border: rgba(24, 126, 11, 0.7) solid 2px;
     border-radius: 20px;
+    margin: 10px 0;
 }
 div.causas__intro {
     border: 10px double #F53D00;
     border-radius: 20px;
-    padding: 15px;
     font-weight: bold;
-    font-size: 18px;
-    margin: 15px;
-    height: min-content;
+    font-size: 18px; 
 }
 h1.causas__whytitulo, h1 {
     color:#F53D00;
     font-size: 48px;
-    margin-left: 100px;
-    margin-top: 0;
+    text-shadow: 0 0 2px black;
 }
 div article.causas__whytxt1, div article.causas__whytxt2 {
     width: 50%;
-    padding: auto;
-    margin: 5px;
     text-align: center;
     align-items: center;
     font-size: 18px;
-    }
-iframe {
-    padding: 20px 0;
-    margin: 5px;
 }
-.accesosmasclaros__nav ul li{
-    list-style-type: none;
-    padding: 50PX;
-    margin: 5px;
-}
-/* Home Final */
+/* /Home */
 /* Ciclo Actual Inicio */
-.cicloactual {
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 20% 10% auto; 
-    grid-template-areas: 
-    "link titulo"
-    "Subtit Subtit"
-    "imperdibles imperdibles";
-    justify-items: center;
-    align-items: center; 
-    gap: 5px 5px;
-    margin: 35px 0;
-}
-.cicloactual__link { 
-    grid-area: link; 
-    justify-self: right;
-}
 .cicloactual__link img {
-    padding: 5px;
     border: solid rgba(24, 126, 11, 0.7) 2px;
-    border-radius: 20px;
     text-align: center;
 }
 .cicloactual__titulo { 
     grid-area: titulo; 
     justify-self: left;
-}
-.cicloactual__imperdiblestit { 
-    grid-area: Subtit; 
-    justify-self: left;
-    margin-left: 100px;
-    font-size: 28px;
-}
-.cicloactual__imperdibles { 
-    grid-area: imperdibles; 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    text-shadow: 0 0 2px black;
 }
 .cicloactual__imperdibles img {
     margin: 10px;
     border:black 2px solid;
-    width: 550px;
 }
-/* Ciclo Actual Final */
+/* /Ciclo Actual */
 /* Contacto Comienzo */
-.gridcontacto {
-    display: grid;
-    grid-template-areas: "titulo titulo"
-                        "intro formulario";
-    grid-template-columns: 50% auto;
-    grid-template-rows: 15% auto;
-    gap: 30px;
-    justify-items: center;
-    margin: 50px 0;
-}
-.gridcontacto h1 {
-    grid-area: titulo;
-}
 .contacto__intro {
-    grid-area: intro;
     font-size: 18px;
 }
 .contacto__intro p {
     margin: 30px;
 }
 .contacto__formulario {
-    grid-area: formulario;
-    padding: 15px;
     background-color: rgba(24, 126, 11, 0.7);
     border: rgba(24, 126, 11, 0.7) solid 2px;
     border-radius: 20px;
-}
-input {
-    padding: 10px;
-    margin: 5px;
+    margin: 30px 0;
 }
 .button {
     border:#F53D00 solid 2px;
-    border-radius: 20px;
     background-color: #F53D00;
 }
 .button:hover {
     font-weight: bold;
     font-size: 16px;
+    border:#F53D00 solid 2px;
+    background-color: #F53D00;
 }
-/* Contacto Final */
+/* /Contacto */
 /* Online Comienzo */
-.gridonline {
-    display: grid;
-    grid-template-areas: "intro intro"
-                        "cupones externo";
-    grid-template-columns: 50% auto;
-    grid-template-rows: 50% auto;
-    gap: 30px;
-    justify-items: center;
-    align-items: center;
-}
-.online__introcasa {
-    grid-area: intro;
-    height: 270px;
-}
 .online__introcasa h1 {
     margin-bottom: 0ch;
     margin-top: 20px;
@@ -282,16 +136,10 @@ input {
     border: solid 1px white;
     border-radius: 20px;
 }
-.online__introcupones {
-    grid-area: cupones;
-}
 .online__introcupones h3, .online__introcupones p {
     margin-left: 25px;
 }
-.online__linkexterno {
-    grid-area: externo;
-}
-/* Online Final */
+/* /Online */
 /* Pronta Comienzo */
 .pronta__intro {
     text-align: center;
@@ -320,221 +168,48 @@ h2.galeria__titulo {
     margin: 20px;
     color: #F53D00;
     font-size: 24px;
-}
-.galeria p {
-    width: 250px;
-    text-align: center;
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(91,137,24,1) 35%);
+    text-shadow: 1px 1px 2px black;
 }
 .galeria img {
     padding: 20px;
 }
-/* Pronta Final */
-/* Media tablet */
-@media only screen and (min-width:769px) and (max-width:1024px) {
-    a {
-        font-size: 18px; 
-    } 
-    .head {
-        display: grid;
-        grid-template-areas: "euge  natura"
-                            ".  nav1";
-        grid-template-columns: 50% auto;
-        background-size: cover;
-        width: 100%;
+/* /Pronta */
+@media only screen and (max-width: 768px) {
+    /* Head */
+    div.head__nav ul {
+        font-size: 16px;
     }
-    .head__yo {
-        justify-content: flex-start;
-        margin-top: 15px;
-        margin-left: 30px;
-    }
-    .head__fotoyo {
-         width: 80%;
-    }
-    .head__logonatura {
-        height: 80%;
-        margin: 15px 20px;
-    }
-    div.head__nav ul li {
-        padding: 5px;
-    }
-    /* FlexBox Foot */
+    /* /Head  */
+    /* Foot */
     .foot__nav, .foot__navrrss {
-        list-style-type: none;
         font-size: 18px;
-        text-shadow: 0 0 2px black;
-        align-items: center;
-        justify-content: space-between;
     }
-    .foot__nav li {
-        padding: 2.5px;
-    }
-    /* Home Comienzo */
-    /* Grid Main Causas */
-    .gridmain {
-        display: grid;
-        grid-template-areas: "intro intro"
-                            "causas accesos";
-        grid-template-columns: 75% auto;
-        grid-template-rows: 15% auto;
-        width: fit-content;
-    }
-    .causas__whycontent2, .causas__whycontent1 {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 100px;
-    }
-    .accesosmasclaros__home {
-        margin-top: 600px;
-    }
-    /* Home Final */
-    /* Ciclo Acutal */
-    .cicloactual {
-        display: grid; 
-        grid-template-columns: 1fr 1fr; 
-        grid-template-rows: 15% 5% auto; 
-    }
-    .cicloactual__imperdibles img {
-        width: 400px;
-    }
-    .cicloactual__imperdibles { 
-        flex-direction: column;
-    }
-    /* Ciclo Acutal Final*/
-    /* Online Comienzo */
-    .online__introcasa h1 {
-        margin-left: 200px;
-    }
-    /* Online Final */
-}
-/* Media Mobile */
-@media only screen and (min-width:0px) and (max-width:768px) {
-    /* Grid Head */
-    .head {
-        display: grid;
-        grid-template-areas: "euge natura"
-                            "nav1 nav1";
-        grid-template-columns: 450px auto;
-        grid-template-rows: 65% 35%;
-        background: rgba(0, 0, 0, 0.12) url(../images/verde1.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-blend-mode: multiply;
-        background-size: cover;
-        width: 1025px;
-    }
-    .head__yo {
-        grid-area: euge;
-        display: flex;
-        justify-content: center;
-        margin-top: 5px;
-        margin-left: 15px;
-    }
-    .head__fotoyo {
-        width: 140px;
-    }
-    .head__natura {
-        grid-area: natura;
-        margin-left: 50px;
-    }
-    .head__nav {
-        grid-area: nav1;
-        justify-content: center;
-        align-self: center;
-    }
-    .head__logonatura {
-        height: 80%;
-        margin: 15px 0px;
-    }
-    .head__nav--none {
-        justify-content: right;
-    }
-    .head__nav--centrado {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;   
-    }
-    /* Footer */
-    /* FlexBox Foot */
-    footer {
-        display: grid;
-        grid-template-areas: "nav2 navrrss";
-        grid-template-columns: 40% 30%;
-        grid-template-rows: auto;
-        background-image: url(../images/verde1.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        width: 1025px;
-    }
-    .foot__nav ul li a, .head ul li a {
-        font-size: 17px;
-    }
+    /* /Foot  */
     /* Home */
-    /* Grid Main Causas */
-    .gridmain {
-        display: grid;
-        grid-template-areas: "intro intro"
-                            "causas accesos";
-        grid-template-columns: 540px 200px;
-        grid-template-rows: 20% auto;
-        width: fit-content;
-    }
-    .causas__whycontent2, .causas__whycontent1 {
+    .causas__whycontent1, .causas__whycontent2 {
         display: flex;
         flex-direction: column;
-        margin-bottom: 50px;
-    }
-    iframe {
-        width: 400px;
-        height: 200px;
-    }
-    div article.causas__whytxt1, div article.causas__whytxt2 {
-        width: 90%;
-    }
-    .accesosmasclaros__home {
-        margin-top: 450px;
-    }
-    .accesosmasclaros__home ul li {
-        padding: 5px;
-    }
-    /* Ciclo Actual */
-    img.linkciclo {
-        width: 150px;
+        background-color: rgba(24, 126, 11, 0.7);
+        justify-content: center;
+        align-items: center;
+        border: rgba(24, 126, 11, 0.7) solid 2px;
+        border-radius: 20px;
         margin: 10px 0;
     }
-    .cicloactual__imperdibles img {
-        width: 300px;
+    div article.causas__whytxt1, div article.causas__whytxt2 {
+        width: 80%;
+        text-align: center;
+        align-items: center;
+        font-size: 18px;
     }
-        /* Online */
-    .online__introcasa h1 {
-        margin-left: 165px;
+    iframe {
+        width: min-content;
     }
-    /* Pronta */
-    h1.causas__whytitulo, h1 {
-        margin-left: 0px;
+    /* /Home */
+    /* Ciclo Actual */
+    /* /Ciclo Actual */
+    /* Pronta Entrega */
+    .pronta__intro p {
+        font-size: 18px;
     }
 }
-/* Animaciones */
-@keyframes intro {
-    0%   {background-color: #F53D00;}
-    25%  {background-color: #F08B08;}
-    50%  {background-color: #FAD41A;}
-    75% {background-color: #FAEDA7;}
-    100% {background-color: white;}
-}
-.causas__intro {
-    animation-name: intro;
-    animation-duration: 10s;
-    animation-delay: 2s;
-    animation-iteration-count: 1;
-}
-div.cicloactual__link {
-transition: width 2s, height 2s, transform 2s;
-}
-div.cicloactual__link:hover {
-transform: rotate(360deg);
-}
-

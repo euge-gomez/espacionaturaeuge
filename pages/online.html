@@ -4,65 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- Mi Css -->
     <link rel="stylesheet" href="../css/style.css">
     <title>Online</title>
 </head>
 <body>
-    <header class="head">
-        <div class="head__yo">
-            <a href="../index.html"><img class="head__fotoyo" src="../images/fotoperfil.jpg" alt="Foto de perfil de Euge"></a>
+    <div class="conteiner">
+        <div class="head row d-flex justify-content-center">
+            <div class="head__yo col-6 text-center">
+                <a href="../index.html"><img class="m-1 rounded head__fotoyo img-fluid justify-content-center" src="../images/fotoperfil.jpg" alt="Foto de perfil de Euge"></a>
+            </div>
+            <div class="head__natura col-6 text-center">
+                <img class="rounded head__logonatura img-fluid m-3" src="../images/logonatura.jpg" alt="Logo de Natura">
+            </div>
         </div>
-        <div class="head__natura">
-            <img class="head__logonatura" src="../images/logonatura.jpg" alt="Logo de Natura">
-        </div>
-        <div class="head__nav">
-            <nav class="head__nav--centrado">
-                <ul class="head__nav--none">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="actualciclo.html">Ciclo Actual</a></li>
-                    <li><a href="pronta.html">Pronta Entrega</a></li>
+        <div class="head__nav row d-flex">
+            <nav class="navbar col-12">
+                <ul class="head__nav--none nav text-center">
+                    <li class="nav-item"><a class="nav-link" href="actualciclo.html">Ciclo Actual</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pronta.html">Pronta Entrega</a></li>
                 </ul>         
             </nav>
-        </div>
-    </header>
-    <main class="gridonline">
-        <section class="online__introcasa">
-            <h1>Compra desde tu casa!</h1>
-            <p>Si no sos de Córdoba Capital, o simplemente preferís recibir los productos en la comodidad de tu hogar, esta opción es ideal.
+        </div> 
+        <h1 class="row">Compra desde tu casa!</h1>
+        <div class="row online__introcasa">
+            <p class="col-12">Si no sos de Córdoba Capital, o simplemente preferís recibir los productos en la comodidad de tu hogar, esta opción es ideal.
                 Entrás al link, utilizás los cupones disponibles y Natura manda el pedido a tu domicilio! Si tenés cualquier duda 
                 o sugerencia escribime a través del formulario de contacto o a mis redes que encontraras en el pie de página. En este espacio también suele haber productos 
                 y ofertas que en el catalogo regular del ciclo no están disponibles.</p>
-            <p>No dejes de aprovechar!!!</p>  
-        </section>
-        <section class="online__introcupones">
+            <p class="col-12">No dejes de aprovechar!!!</p>  
+        </div>
+        <div class="row">
+        <section class="online__introcupones col-6 col-sm-11">
             <h3>Cupones? Obtené tu Descuento</h3>
             <p>Es comun encontrar descuentos en la página de Natura, bonificaciones especiales y posibilidad de no abonar el costo de envío. Además podés consultarme sobre algun cupón especial por la fecha o promociones especiales.</p>
         </section>
-        <section class="online__linkexterno">
+        <section class="online__linkexterno col-6 col-sm-11">
             <h3>Seguí el link para comprar</h3>
             <a href="https://www.naturacosmeticos.com.ar/consultoria/espacioeuge" target="_blanck">Link espacioeuge vitual</a>
         </section>
-    </main>
-    <footer>
-    <hr>
-        <nav class="foot__nav foot__nav--fondo"> 
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="online.html">Online</a></li>
-                <li><a href="pronta.html">Pronta Entrega</a></li>
-            </ul>         
-        </nav>
-        <nav class="foot__navrrss">
-            <ul class="foot__navrrss">
-                <li><a href="https://api.whatsapp.com/send?phone=005493513092934"><img src="../images/404-whatsapp.png"></a></li>
-                <li><a href="https://www.instagram.com/eugeqca/"><img src="../images/403-instagram.png"></a></li>
-                <!-- no logro hacer andar el link externo de telegram hay que seguir googleando -->
-                <li><a href="https://msng.link/o/Eugequimica=tg"><img src="../images/406-telegram.png"></a></li>
-                <li><a href="mailto:eugequimica@gmail.com"><img src="../images/388-mail.png"></a></li>
-            </ul>
-        </nav>
-    </footer>
+        </div>
+        <div class="foot row">
+            <nav class="foot__nav foot__nav--fondo col-6">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="actualciclo.html">Ciclo Actual</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pronta.html">Pronta Entrega</a></li>
+                </ul>            
+            </nav>
+            <nav class="foot__navrrss col-6">
+                <ul class="foot__navrrss">
+                    <li><a href="https://api.whatsapp.com/send?phone=005493513092934"><img class="img-fluid" src="../images/404-whatsapp.png"></a></li>
+                    <li><a href="https://www.instagram.com/eugeqca/"><img class="img-fluid" src="../images/403-instagram.png"></a></li>
+                    <!-- no logro hacer andar el link externo de telegram hay que seguir googleando -->
+                    <li><a href="https://msng.link/o/Eugequimica=tg"><img class="img-fluid" src="../images/406-telegram.png"></a></li>
+                    <li><a href="mailto:eugequimica@gmail.com"><img class="img-fluid" src="../images/388-mail.png"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </body>
 </html>
