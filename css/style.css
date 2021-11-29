@@ -1,6 +1,8 @@
 body {
     font-family: Calibri;
     user-select: none;
+    width: 95vw;
+    margin-left: 25px;
 }
 /* Media Desktop lo dejo sin poner media para que lo tome como el general y sobre las excepciones cargo modificaciones*/
 /* Head */
@@ -14,6 +16,10 @@ body {
 }
 a {
     color: #f53d00;
+}
+a:hover {
+    color: #F53D00;
+    font-style: italic;
 }
 div.head__nav {
     display: flex;
