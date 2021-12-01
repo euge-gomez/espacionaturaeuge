@@ -1,11 +1,11 @@
-body {
+/* body {
     font-family: Calibri;
     user-select: none;
     width: 95vw;
     margin-left: 25px;
 }
 /* Media Desktop lo dejo sin poner media para que lo tome como el general y sobre las excepciones cargo modificaciones*/
-/* Head */
+/* Head 
 .head {
     background: rgba(0, 0, 0, 0.12) url(../images/verde1.jpg);
     background-position: center;
@@ -36,7 +36,7 @@ div.head__nav ul {
     margin: 15px 0;
 }
 /* /Head */
-/* Foot */
+/* Foot 
 .foot {
     height: max-content;
     background-image: url(../images/verde1.jpg);
@@ -58,7 +58,7 @@ div.head__nav ul {
     justify-content: space-around;
 }
 /* /Foot */
-/* Home Inicio */
+/* Home Inicio 
 .causas__whycontent1, .causas__whycontent2 {
     display: flex;
     flex-direction: row;
@@ -87,7 +87,7 @@ div article.causas__whytxt1, div article.causas__whytxt2 {
     font-size: 18px;
 }
 /* /Home */
-/* Ciclo Actual Inicio */
+/* Ciclo Actual Inicio 
 .cicloactual__link img {
     border: solid rgba(24, 126, 11, 0.7) 2px;
     text-align: center;
@@ -102,7 +102,7 @@ div article.causas__whytxt1, div article.causas__whytxt2 {
     border:black 2px solid;
 }
 /* /Ciclo Actual */
-/* Contacto Comienzo */
+/* Contacto Comienzo 
 .contacto__intro {
     font-size: 18px;
 }
@@ -126,7 +126,7 @@ div article.causas__whytxt1, div article.causas__whytxt2 {
     background-color: #F53D00;
 }
 /* /Contacto */
-/* Online Comienzo */
+/* Online Comienzo 
 .online__introcasa h1 {
     margin-bottom: 0ch;
     margin-top: 20px;
@@ -146,7 +146,7 @@ div article.causas__whytxt1, div article.causas__whytxt2 {
     margin-left: 25px;
 }
 /* /Online */
-/* Pronta Comienzo */
+/* Pronta Comienzo 
 .pronta__intro {
     text-align: center;
 }
@@ -179,19 +179,19 @@ h2.galeria__titulo {
 .galeria img {
     padding: 20px;
 }
-/* /Pronta */
+/* /Pronta 
 @media only screen and (max-width: 768px) {
-    /* Head */
+    /* Head 
     div.head__nav ul {
         font-size: 16px;
     }
     /* /Head  */
-    /* Foot */
+    /* Foot 
     .foot__nav, .foot__navrrss {
         font-size: 18px;
     }
     /* /Foot  */
-    /* Home */
+    /* Home 
     .causas__whycontent1, .causas__whycontent2 {
         display: flex;
         flex-direction: column;
@@ -214,8 +214,9 @@ h2.galeria__titulo {
     /* /Home */
     /* Ciclo Actual */
     /* /Ciclo Actual */
-    /* Pronta Entrega */
+    /* Pronta Entrega 
     .pronta__intro p {
         font-size: 18px;
     }
 }
+*/
