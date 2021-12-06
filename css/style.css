@@ -1,222 +1,313 @@
-/* body {
-    font-family: Calibri;
-    user-select: none;
-    width: 95vw;
-    margin-left: 25px;
-}
-/* Media Desktop lo dejo sin poner media para que lo tome como el general y sobre las excepciones cargo modificaciones*/
-/* Head 
+body {
+  font-family: Calibri;
+  user-select: none;
+  width: 90vw;
+  margin: 0 50px; }
+
+@media only screen and (min-width: 769px) and (max-width: 990px) {
+  body {
+    width: 80vw; } }
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 75vw; } }
+
+body {
+  font-family: Calibri;
+  user-select: none;
+  width: 90vw;
+  margin: 0 50px; }
+
+@media only screen and (min-width: 769px) and (max-width: 990px) {
+  body {
+    width: 80vw; } }
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 75vw; } }
+
 .head {
-    background: rgba(0, 0, 0, 0.12) url(../images/verde1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-blend-mode: multiply;
-}
+  background: rgba(0, 0, 0, 0.12) url(../images/verde1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: multiply; }
+
 a {
-    color: #f53d00;
-}
-a:hover {
+  color: #F53D00; }
+  a:hover {
     color: #F53D00;
-    font-style: italic;
-}
-div.head__nav {
-    display: flex;
-}
-div.head__nav ul {
-    font-size: 24px;
-    text-shadow: 0 0 1px black;
-    justify-self: center; 
-}
-.head__nav li, .foot__nav li, .foot__navrrss li {
+    font-style: italic; }
+
+.head__nav ul {
+  font-size: 24px;
+  text-shadow: 0 0 1px black;
+  justify-self: center; }
+  .head__nav ul li {
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 20px;
     font-weight: bold;
-    margin: 15px 0;
-}
-/* /Head */
-/* Foot 
+    margin: 15px 0; }
+
+.head__fotoyo, .head__logonatura {
+  width: 10vw; }
+
+@media only screen and (min-width: 769px) and (max-width: 990px) {
+  .head__fotoyo, .head__logonatura {
+    width: 15vw; } }
+
+@media only screen and (max-width: 768px) {
+  /* Head */
+  div.head__nav ul {
+    font-size: 16px; }
+  .head__fotoyo, .head__logonatura {
+    width: 20vw; } }
+
 .foot {
-    height: max-content;
-    background-image: url(../images/verde1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    align-content: center;
-}
+  height: max-content;
+  background-image: url(../images/verde1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  align-content: center; }
+
 .foot__nav, .foot__navrrss {
-    list-style-type: none;
+  list-style-type: none;
+  font-size: 18px;
+  text-shadow: 0 0 2px black;
+  align-items: center;
+  justify-content: space-between; }
+  .foot__nav li, .foot__navrrss li {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    font-weight: bold;
+    margin: 15px 0; }
+
+.foot__navrrss ul {
+  display: flex;
+  justify-content: space-around; }
+
+@media only screen and (max-width: 768px) {
+  .foot__nav, .foot__navrrss {
     font-size: 18px;
-    text-shadow: 0 0 2px black;
-    align-items: center;
-    justify-content: space-between;
-}
-.foot__navrrss ul  {
-    display: flex;
-    justify-content: space-around;
-}
-/* /Foot */
-/* Home Inicio 
+    display: block; } }
+
+body {
+  font-family: Calibri;
+  user-select: none;
+  width: 90vw;
+  margin: 0 50px; }
+
+@media only screen and (min-width: 769px) and (max-width: 990px) {
+  body {
+    width: 80vw; } }
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 75vw; } }
+
+iframe {
+  width: 30vw;
+  height: 20vw; }
+
 .causas__whycontent1, .causas__whycontent2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin: 10px 0;
+  background-image: url(../images/fondocausas.png); }
+
+div.causas__intro {
+  border: 10px double #F53D00;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 15px; }
+
+h1 {
+  color: #F53D00;
+  font-size: 48px;
+  text-shadow: 0 0 2px black; }
+
+div article.causas__whytxt1, div article.causas__whytxt2 {
+  width: 50%;
+  text-align: center;
+  align-items: center;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold; }
+
+@media only screen and (max-width: 768px) {
+  .causas__whycontent1, .causas__whycontent2 {
     display: flex;
-    flex-direction: row;
-    background-color: rgba(24, 126, 11, 0.7);
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: rgba(24, 126, 11, 0.7) solid 2px;
-    border-radius: 20px;
-    margin: 10px 0;
-}
-div.causas__intro {
-    border: 10px double #F53D00;
-    border-radius: 20px;
-    font-weight: bold;
-    font-size: 18px; 
-}
-h1.causas__whytitulo, h1 {
-    color:#F53D00;
-    font-size: 48px;
-    text-shadow: 0 0 2px black;
-}
-div article.causas__whytxt1, div article.causas__whytxt2 {
-    width: 50%;
+    margin: 10px 0; }
+  div article.causas__whytxt1, div article.causas__whytxt2 {
+    width: 80%;
     text-align: center;
     align-items: center;
-    font-size: 18px;
-}
-/* /Home */
-/* Ciclo Actual Inicio 
+    font-size: 18px; }
+  iframe {
+    width: min-content; } }
+
+body {
+  font-family: Calibri;
+  user-select: none;
+  width: 90vw;
+  margin: 0 50px; }
+
+@media only screen and (min-width: 769px) and (max-width: 990px) {
+  body {
+    width: 80vw; } }
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 75vw; } }
+
 .cicloactual__link img {
-    border: solid rgba(24, 126, 11, 0.7) 2px;
-    text-align: center;
-}
-.cicloactual__titulo { 
-    grid-area: titulo; 
-    justify-self: left;
-    text-shadow: 0 0 2px black;
-}
+  margin-top: 15px;
+  border: solid #F53D00 2px;
+  text-align: center; }
+  .cicloactual__link img:hover {
+    box-shadow: 10px 5px 5px black; }
+
+.cicloactual__titulo {
+  grid-area: titulo;
+  justify-self: left;
+  text-shadow: 0 0 2px black; }
+
 .cicloactual__imperdibles img {
-    margin: 10px;
-    border:black 2px solid;
-}
-/* /Ciclo Actual */
-/* Contacto Comienzo 
+  margin: 10px;
+  border: #F53D00 2px solid; }
+
+body {
+  font-family: Calibri;
+  user-select: none;
+  width: 90vw;
+  margin: 0 50px; }
+
+@media only screen and (min-width: 769px) and (max-width: 990px) {
+  body {
+    width: 80vw; } }
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 75vw; } }
+
 .contacto__intro {
-    font-size: 18px;
-}
-.contacto__intro p {
-    margin: 30px;
-}
+  font-size: 18px; }
+
 .contacto__formulario {
-    background-color: rgba(24, 126, 11, 0.7);
-    border: rgba(24, 126, 11, 0.7) solid 2px;
-    border-radius: 20px;
-    margin: 30px 0;
-}
+  background-color: rgba(245, 61, 0, 0.5);
+  border: rgba(245, 61, 0, 0.5) solid 2px;
+  border-radius: 20px;
+  margin: 30px 0; }
+
 .button {
-    border:#F53D00 solid 2px;
-    background-color: #F53D00;
-}
-.button:hover {
+  border: #F53D00 solid 2px;
+  background-color: #F53D00; }
+  .button:hover {
     font-weight: bold;
     font-size: 16px;
-    border:#F53D00 solid 2px;
-    background-color: #F53D00;
-}
-/* /Contacto */
-/* Online Comienzo 
+    border: #F53D00 solid 2px;
+    background-color: #F53D00; }
+
+body {
+  font-family: Calibri;
+  user-select: none;
+  width: 90vw;
+  margin: 0 50px; }
+
+@media only screen and (min-width: 769px) and (max-width: 990px) {
+  body {
+    width: 80vw; } }
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 75vw; } }
+
 .online__introcasa h1 {
-    margin-bottom: 0ch;
-    margin-top: 20px;
-    padding-top: 20px;
-    margin-left: 400px;
-    text-shadow: 1px 1px 2px black;
-}
+  margin-bottom: 0ch;
+  margin-top: 20px;
+  padding-top: 20px;
+  margin-left: 400px;
+  text-shadow: 1px 1px 2px black; }
+
 .online__introcasa p {
-    margin: 20px;
-    padding: 15px;
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgb(91 137 24) 35%);
-    text-align: center;
-    border: solid 1px white;
-    border-radius: 20px;
-}
+  margin: 20px;
+  padding: 15px;
+  border: outset 3px rgba(245, 61, 0, 0.5);
+  border-radius: 20px; }
+
 .online__introcupones h3, .online__introcupones p {
-    margin-left: 25px;
-}
-/* /Online */
-/* Pronta Comienzo 
+  margin-left: 25px; }
+
+section.online__introcupones, section.online__linkexterno {
+  border: #F53D00 solid 2px;
+  border-radius: 20px;
+  margin: 5px;
+  padding: 5px; }
+
+body {
+  font-family: Calibri;
+  user-select: none;
+  width: 90vw;
+  margin: 0 50px; }
+
+@media only screen and (min-width: 769px) and (max-width: 990px) {
+  body {
+    width: 80vw; } }
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 75vw; } }
+
 .pronta__intro {
-    text-align: center;
-}
-.pronta__intro p {
+  text-align: center; }
+  .pronta__intro p {
     font-weight: bold;
     border: #F53D00 2px solid;
     border-radius: 20px;
     padding: 15px;
     font-size: 24px;
-    margin: 5px;
-}
+    margin: 5px; }
+
 section.galeria {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 15px;
-}
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 15px; }
+
 h2.galeria__titulo {
-    margin: 20px;
-    font-size: 32px;
-    text-decoration: underline;
-}
+  margin: 20px;
+  font-size: 32px;
+  text-decoration: underline; }
+
 .galeria h3 {
-    margin: 20px;
-    color: #F53D00;
-    font-size: 24px;
-    text-shadow: 1px 1px 2px black;
-}
+  margin: 20px;
+  color: #F53D00;
+  font-size: 24px;
+  text-shadow: 1px 1px 2px black; }
+
 .galeria img {
-    padding: 20px;
-}
-/* /Pronta 
+  padding: 20px; }
+
+@media only screen and (min-width: 769px) and (max-width: 990px) {
+  h3.txtcarousel {
+    font-size: 18px; } }
+
 @media only screen and (max-width: 768px) {
-    /* Head 
-    div.head__nav ul {
-        font-size: 16px;
-    }
-    /* /Head  */
-    /* Foot 
-    .foot__nav, .foot__navrrss {
-        font-size: 18px;
-    }
-    /* /Foot  */
-    /* Home 
-    .causas__whycontent1, .causas__whycontent2 {
-        display: flex;
-        flex-direction: column;
-        background-color: rgba(24, 126, 11, 0.7);
-        justify-content: center;
-        align-items: center;
-        border: rgba(24, 126, 11, 0.7) solid 2px;
-        border-radius: 20px;
-        margin: 10px 0;
-    }
-    div article.causas__whytxt1, div article.causas__whytxt2 {
-        width: 80%;
-        text-align: center;
-        align-items: center;
-        font-size: 18px;
-    }
-    iframe {
-        width: min-content;
-    }
-    /* /Home */
-    /* Ciclo Actual */
-    /* /Ciclo Actual */
-    /* Pronta Entrega 
-    .pronta__intro p {
-        font-size: 18px;
-    }
-}
-*/
+  .pronta__intro p {
+    font-size: 18px; }
+  .txtcarousel h3 {
+    font-size: 16px;
+    margin: 0; }
+  .txtcarousel p {
+    font-size: 12px; } }

@@ -1,0 +1,23 @@
+// Ciclo Actual no necesita medias queries
+@import "root";
+.cicloactual__link {
+    img {
+        margin-top: 15px;
+        border: solid $colorppal 2px;
+        text-align: center;
+        &:hover {
+            box-shadow: 10px 5px 5px black;
+        }
+    }
+}
+.cicloactual__titulo { 
+    grid-area: titulo; 
+    justify-self: left;
+    text-shadow: 0 0 2px black;
+}
+.cicloactual__imperdibles {
+    img {
+    margin: 10px;
+    border:$colorppal 2px solid;
+    }
+}

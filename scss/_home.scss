@@ -1,0 +1,53 @@
+// Home y sus mediaqueries 
+@import "root";
+iframe {
+    width: 30vw;
+    height: 20vw;
+}
+.causas__whycontent1, .causas__whycontent2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 10px 0;
+    background-image: url(../images/fondocausas.png);
+}
+div.causas__intro {
+    border: 10px double $colorppal;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 18px; 
+    margin-top: 15px;
+}
+h1 {
+    color:$colorppal;
+    font-size: 48px;
+    text-shadow: 0 0 2px black;
+}
+div article.causas__whytxt1, div article.causas__whytxt2 {
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+}
+@media only screen and (max-width: 768px) {
+    .causas__whycontent1, .causas__whycontent2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+    }
+    div article.causas__whytxt1, div article.causas__whytxt2 {
+        width: 80%;
+        text-align: center;
+        align-items: center;
+        font-size: 18px;
+    }
+    iframe {
+        width: min-content;
+    }
+}

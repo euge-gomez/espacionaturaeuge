@@ -1,0 +1,28 @@
+// Online no necesita media queries
+@import "root";
+.online__introcasa {
+    h1 {
+        margin-bottom: 0ch;
+        margin-top: 20px;
+        padding-top: 20px;
+        margin-left: 400px;
+        text-shadow: 1px 1px 2px black;
+    }
+    p {
+        margin: 20px;
+        padding: 15px;
+        border: outset 3px $colortransparent;
+        border-radius: 20px;
+    }
+}
+.online__introcupones {
+    h3, p {
+        margin-left: 25px;
+    }
+}
+section.online__introcupones, section.online__linkexterno {
+    border: $colorppal solid 2px;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px;
+}

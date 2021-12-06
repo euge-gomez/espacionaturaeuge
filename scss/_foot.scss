@@ -1,0 +1,35 @@
+// Foot y sus media queries
+.foot {
+    height: max-content;
+    background-image: url(../images/verde1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-content: center;
+}
+.foot__nav, .foot__navrrss {
+    list-style-type: none;
+    font-size: 18px;
+    text-shadow: 0 0 2px black;
+    align-items: center;
+    justify-content: space-between;
+    li  {
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 20px;
+        font-weight: bold;
+        margin: 15px 0;
+    }
+}
+.foot__navrrss {
+    ul {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .foot__nav, .foot__navrrss {
+        font-size: 18px;
+        display: block;
+    }
+}

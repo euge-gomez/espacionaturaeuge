@@ -1,0 +1,21 @@
+// Contacto no necesita media queries
+@import "root";
+.contacto__intro {
+    font-size: 18px;
+}
+.contacto__formulario {
+    background-color: $colortransparent;
+    border: $colortransparent solid 2px;
+    border-radius: 20px;
+    margin: 30px 0;
+}
+.button {
+    border:$colorppal solid 2px;
+    background-color: $colorppal;
+    &:hover {
+        font-weight: bold;
+        font-size: 16px;
+        border:$colorppal solid 2px;
+        background-color: $colorppal;
+    }
+}
