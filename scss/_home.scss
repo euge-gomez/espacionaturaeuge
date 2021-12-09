@@ -1,5 +1,4 @@
-// Home y sus mediaqueries 
-@import "root";
+// Home
 iframe {
     width: 30vw;
     height: 20vw;
@@ -9,27 +8,28 @@ iframe {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-image: url(../images/fondocausas.png);
     border-radius: 20px;
     margin: 10px 0;
-    background-image: url(../images/fondocausas.png);
+    
 }
 div.causas__intro {
     border: 10px double $colorppal;
     border-radius: 20px;
     font-weight: bold;
-    font-size: 18px; 
+    font-size: map-get($map: $mapfs, $key: medium2); 
     margin-top: 15px;
 }
 h1 {
     color:$colorppal;
-    font-size: 48px;
+    font-size: map-get($map: $mapfs, $key: big1);
     text-shadow: 0 0 2px black;
 }
 div article.causas__whytxt1, div article.causas__whytxt2 {
     width: 50%;
     text-align: center;
     align-items: center;
-    font-size: 18px;
+    font-size: map-get($map: $mapfs, $key: medium2);
     font-style: italic;
     font-weight: bold;
 }
@@ -45,7 +45,7 @@ div article.causas__whytxt1, div article.causas__whytxt2 {
         width: 80%;
         text-align: center;
         align-items: center;
-        font-size: 18px;
+        font-size: map-get($map: $mapfs, $key: medium2);
     }
     iframe {
         width: min-content;

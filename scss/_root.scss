@@ -1,21 +1,10 @@
-body {
-    font-family: Calibri;
-    user-select: none;
-    width: 90vw;
-    margin: 0 50px;
-}
 // Variables 
 $colorppal: #F53D00;
 $colortransparent: rgba(245, 61, 0, 0.5);
-// Media Query intermedia
-@media only screen and (min-width:769px) and (max-width: 990px) {
-    body {
-        width: 80vw;
-    }
-}
-// MEdia Query mobile
-@media only screen and (max-width: 768px) {
-    body {
-        width: 75vw;
-    }
+// Map lo hago con fuentes porque solo tengo 1 color
+$mapfs: ("big1": 48px, "big2": 32px, "medium1": 24px, "medium2": 18px, "small1": 16px, "small2": 12px);
+// Mixin de border
+@mixin border {
+    border: 2px solid $colorppal;
+    border-radius: 20px;
 }

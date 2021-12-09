@@ -1,9 +1,8 @@
-// Ciclo Actual no necesita medias queries
-@import "root";
+// Ciclo Actual 
 .cicloactual__link {
     img {
         margin-top: 15px;
-        border: solid $colorppal 2px;
+        @include border;
         text-align: center;
         &:hover {
             box-shadow: 10px 5px 5px black;
@@ -18,6 +17,6 @@
 .cicloactual__imperdibles {
     img {
     margin: 10px;
-    border:$colorppal 2px solid;
+    @include border;
     }
 }

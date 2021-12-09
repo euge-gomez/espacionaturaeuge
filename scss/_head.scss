@@ -1,5 +1,4 @@
-// Head y sus media queries
-@import "root";
+// Head
 .head {
     background: rgba(0, 0, 0, 0.12) url(../images/verde1.jpg);
     background-position: center;
@@ -16,7 +15,7 @@ a {
     }
 }
 .head__nav ul  {
-    font-size: 24px;
+    font-size: map-get($map: $mapfs, $key: medium1);
     text-shadow: 0 0 1px black;
     justify-self: center; 
     li  {
@@ -29,18 +28,15 @@ a {
 .head__fotoyo, .head__logonatura {
     width: 10vw;
 }
-// Media Query intermedia
 @media only screen and (min-width:769px) and (max-width: 990px) {
     .head__fotoyo, .head__logonatura {
         width: 15vw;
     }
 }
-// Media Query mobile
 @media only screen and (max-width: 768px) {
-    /* Head */
     div.head__nav {
         ul {
-        font-size: 16px;
+        font-size: map-get($map: $mapfs, $key: small1);
         }
     }
     .head__fotoyo, .head__logonatura {

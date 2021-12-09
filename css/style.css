@@ -12,20 +12,6 @@ body {
   body {
     width: 75vw; } }
 
-body {
-  font-family: Calibri;
-  user-select: none;
-  width: 90vw;
-  margin: 0 50px; }
-
-@media only screen and (min-width: 769px) and (max-width: 990px) {
-  body {
-    width: 80vw; } }
-
-@media only screen and (max-width: 768px) {
-  body {
-    width: 75vw; } }
-
 .head {
   background: rgba(0, 0, 0, 0.12) url(../images/verde1.jpg);
   background-position: center;
@@ -58,7 +44,6 @@ a {
     width: 15vw; } }
 
 @media only screen and (max-width: 768px) {
-  /* Head */
   div.head__nav ul {
     font-size: 16px; }
   .head__fotoyo, .head__logonatura {
@@ -94,32 +79,18 @@ a {
     font-size: 18px;
     display: block; } }
 
-body {
-  font-family: Calibri;
-  user-select: none;
-  width: 90vw;
-  margin: 0 50px; }
-
-@media only screen and (min-width: 769px) and (max-width: 990px) {
-  body {
-    width: 80vw; } }
-
-@media only screen and (max-width: 768px) {
-  body {
-    width: 75vw; } }
-
 iframe {
   width: 30vw;
   height: 20vw; }
 
-.causas__whycontent1, .causas__whycontent2 {
+.causas__whycontent1, section.online__introcupones, section.online__linkexterno, .causas__whycontent2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background-image: url(../images/fondocausas.png);
   border-radius: 20px;
-  margin: 10px 0;
-  background-image: url(../images/fondocausas.png); }
+  margin: 10px 0; }
 
 div.causas__intro {
   border: 10px double #F53D00;
@@ -142,7 +113,7 @@ div article.causas__whytxt1, div article.causas__whytxt2 {
   font-weight: bold; }
 
 @media only screen and (max-width: 768px) {
-  .causas__whycontent1, .causas__whycontent2 {
+  .causas__whycontent1, section.online__introcupones, section.online__linkexterno, .causas__whycontent2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -156,23 +127,10 @@ div article.causas__whytxt1, div article.causas__whytxt2 {
   iframe {
     width: min-content; } }
 
-body {
-  font-family: Calibri;
-  user-select: none;
-  width: 90vw;
-  margin: 0 50px; }
-
-@media only screen and (min-width: 769px) and (max-width: 990px) {
-  body {
-    width: 80vw; } }
-
-@media only screen and (max-width: 768px) {
-  body {
-    width: 75vw; } }
-
 .cicloactual__link img {
   margin-top: 15px;
-  border: solid #F53D00 2px;
+  border: 2px solid #F53D00;
+  border-radius: 20px;
   text-align: center; }
   .cicloactual__link img:hover {
     box-shadow: 10px 5px 5px black; }
@@ -184,21 +142,8 @@ body {
 
 .cicloactual__imperdibles img {
   margin: 10px;
-  border: #F53D00 2px solid; }
-
-body {
-  font-family: Calibri;
-  user-select: none;
-  width: 90vw;
-  margin: 0 50px; }
-
-@media only screen and (min-width: 769px) and (max-width: 990px) {
-  body {
-    width: 80vw; } }
-
-@media only screen and (max-width: 768px) {
-  body {
-    width: 75vw; } }
+  border: 2px solid #F53D00;
+  border-radius: 20px; }
 
 .contacto__intro {
   font-size: 18px; }
@@ -215,22 +160,9 @@ body {
   .button:hover {
     font-weight: bold;
     font-size: 16px;
-    border: #F53D00 solid 2px;
+    border: 2px solid #F53D00;
+    border-radius: 20px;
     background-color: #F53D00; }
-
-body {
-  font-family: Calibri;
-  user-select: none;
-  width: 90vw;
-  margin: 0 50px; }
-
-@media only screen and (min-width: 769px) and (max-width: 990px) {
-  body {
-    width: 80vw; } }
-
-@media only screen and (max-width: 768px) {
-  body {
-    width: 75vw; } }
 
 .online__introcasa h1 {
   margin-bottom: 0ch;
@@ -249,30 +181,20 @@ body {
   margin-left: 25px; }
 
 section.online__introcupones, section.online__linkexterno {
-  border: #F53D00 solid 2px;
-  border-radius: 20px;
-  margin: 5px;
-  padding: 5px; }
-
-body {
-  font-family: Calibri;
-  user-select: none;
-  width: 90vw;
-  margin: 0 50px; }
-
-@media only screen and (min-width: 769px) and (max-width: 990px) {
-  body {
-    width: 80vw; } }
-
-@media only screen and (max-width: 768px) {
-  body {
-    width: 75vw; } }
+  border-radius: 150px;
+  margin: 15px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  section.online__introcupones a, section.online__linkexterno a {
+    font-size: 32px; }
 
 .pronta__intro {
   text-align: center; }
   .pronta__intro p {
     font-weight: bold;
-    border: #F53D00 2px solid;
+    border: 2px solid #F53D00;
     border-radius: 20px;
     padding: 15px;
     font-size: 24px;

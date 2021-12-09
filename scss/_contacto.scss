@@ -1,7 +1,6 @@
-// Contacto no necesita media queries
-@import "root";
+// Contacto
 .contacto__intro {
-    font-size: 18px;
+    font-size: map-get($map: $mapfs, $key: medium2);
 }
 .contacto__formulario {
     background-color: $colortransparent;
@@ -14,8 +13,8 @@
     background-color: $colorppal;
     &:hover {
         font-weight: bold;
-        font-size: 16px;
-        border:$colorppal solid 2px;
+        font-size: map-get($map: $mapfs, $key: small1);
+        @include border;
         background-color: $colorppal;
     }
 }

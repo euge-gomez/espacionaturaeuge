@@ -1,5 +1,4 @@
-// Online no necesita media queries
-@import "root";
+// Online
 .online__introcasa {
     h1 {
         margin-bottom: 0ch;
@@ -20,9 +19,16 @@
         margin-left: 25px;
     }
 }
+// Aquí use el @extend como para usarlo, realmente no encontré otro lugar donde hacerlo.
 section.online__introcupones, section.online__linkexterno {
-    border: $colorppal solid 2px;
-    border-radius: 20px;
-    margin: 5px;
-    padding: 5px;
+    @extend .causas__whycontent1;
+    border-radius: 150px;
+    margin: 15px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    a {
+        font-size: map-get($map: $mapfs, $key: big2);
+    }
 }

@@ -1,13 +1,11 @@
-// Pronta y sus media queries
-@import "root";
+// Pronta
 .pronta__intro {
     text-align: center;
     p {
         font-weight: bold;
-        border: $colorppal 2px solid;
-        border-radius: 20px;
+        @include border;
         padding: 15px;
-        font-size: 24px;
+        font-size: map-get($map: $mapfs, $key: medium1);
         margin: 5px;
     }
 }
@@ -20,14 +18,14 @@ section.galeria {
 }
 h2.galeria__titulo {
     margin: 20px;
-    font-size: 32px;
+    font-size: map-get($map: $mapfs, $key: big2);
     text-decoration: underline;
 }
 .galeria {
     h3 {
         margin: 20px;
         color: $colorppal;
-        font-size: 24px;
+        font-size: map-get($map: $mapfs, $key: medium1);
         text-shadow: 1px 1px 2px black;
     }
     img {
@@ -41,16 +39,15 @@ h2.galeria__titulo {
 }
 @media only screen and (max-width: 768px) {
     .pronta__intro p {
-        font-size: 18px;
+        font-size: map-get($map: $mapfs, $key: medium2);
     }
     .txtcarousel {
         h3 {
-            font-size: 16px;
+            font-size: map-get($map: $mapfs, $key: small1);
             margin: 0;
         }
         p {
-        font-size: 12px;
+        font-size: map-get($map: $mapfs, $key: small2);
         }
     }
-    
 }
