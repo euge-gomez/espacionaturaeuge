@@ -1,0 +1,42 @@
+Modificaciones para ser SEO friendly
+
+Suma de Keywords:
+// Home
+natura, belleza, regalos, perfumería, perfumes, estuches, consultora, chronos, 
+ekos, tienda-vitural, maquillaje, jabones, pitanga, maracuya
+//Ciclo Actual
+ciclo-actual, ofertas, imperdibles, natura, belleza, regalos, perfumería, perfumes, 
+estuches, consultora, chronos, ekos, tienda-vitural, maquillaje, jabones, pitanga, maracuya
+//Contacto
+contacto, hace-tu-pedido, sugerencias, natura, belleza, regalos, perfumería, perfumes, 
+estuches, consultora, chronos, ekos, tienda-vitural, maquillaje, jabones, pitanga, maracuya
+//Online
+pedí-online, mi-espacio-natura, espacio-euge, cupones, ofertas, descuentos, natura, 
+belleza, regalos, perfumería, perfumes, estuches, consultora, chronos, ekos,
+ tienda-vitural, maquillaje, jabones, pitanga, maracuya
+//Pronta Entrega
+combos, descuentos, entrega-inmediata, natura, belleza, regalos, perfumería, perfumes, 
+estuches, consultora, chronos, ekos, tienda-vitural, maquillaje, jabones, pitanga, maracuya
+
+Descripciones:
+//Home
+Espacio Natura Euge un espacio para conocer Natura y sus productos desde 
+mi punto de vista
+//Ciclo Actual
+Espacio Natura Euge un espacio para conocer Natura y sus productos desde 
+mi punto de vista / El ciclo actual y sus imperdibles ofertas
+//Contacto 
+Espacio Natura Euge un espacio para conocer Natura y sus productos desde
+ mi punto de vista / Contacto, donde podrás comunicarte conmigo
+//Online 
+Espacio Natura Euge un espacio para conocer Natura y sus productos desde
+ mi punto de vista/ Online donde tendrás acceso a mis descuentos para la tienda virtual
+//Pronta Entrega
+Espacio Natura Euge un espacio para conocer Natura y sus productos desde 
+mi punto de vista / Pronta Entrega, donde tendrás acceso a los porductos que 
+tengo listos para entregar y con super ofertas
+
+Titulos corregidos desconozco que tan bien jaja
+
+Encabezados - Todas mis páginas tenían solo un h1. si tenes alguna sugerencia sobre alguno son 
+bien recibidas
