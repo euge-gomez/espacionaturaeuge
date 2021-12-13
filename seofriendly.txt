@@ -38,5 +38,11 @@ tengo listos para entregar y con super ofertas
 
 Titulos corregidos desconozco que tan bien jaja
 
-Encabezados - Todas mis páginas tenían solo un h1. si tenes alguna sugerencia sobre alguno son 
-bien recibidas
+Encabezados - Todas mis páginas tienen solo un h1. si tenes alguna sugerencia sobre alguno 
+en particular son bien recibidas
+H1s:
+Home> Porque Natura?
+Ciclo Actual > Ciclo Actual
+Contacto > Dejame tu consulta o sugerencia
+Online > Compra desde tu casa!
+Pronta Entrega > Pronta Entrega
