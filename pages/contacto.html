@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="contacto, hace-tu-pedido, sugerencias, natura, belleza, regalos, perfumería, perfumes, estuches, consultora, chronos, ekos, tienda-vitural, maquillaje, jabones, pitanga, maracuya">
     <meta name="description" content="Espacio Natura Euge un espacio para conocer Natura y sus productos desde mi punto de vista / Contacto, donde podrás comunicarte conmigo">
+    <link rel="icon" href="../images/logo.png">
     <!-- Bootstrap Css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -18,15 +19,14 @@
 <body>
     <!-- Conteiner principal Bootstrap -->
     <div class="conteiner">
-        <!-- Head -->
+        <!-- Header -->
         <div class="head row">
+            <!-- Logo Espacio Euge Natura -->
             <div class="head__yo col-lg-3 col-md-12 col-sm-12 text-center">
                 <a href="../index.html"><img class="m-3 rounded head__fotoyo justify-content-center" src="../images/logo.png" alt="Logo del EEN"></a>
             </div>
-            <div class="head__natura col-lg-3 col-md-12 text-center">
-                <img class="rounded head__logonatura m-3" src="../images/logonatura.jpg" alt="Logo de Natura">
-            </div>
-            <nav class="navbar navbar-expand-lg col-lg-6 col-md-12 col-sm-12 head__nav">
+            <!-- Nav principal y completa -->
+            <nav class="navbar navbar-expand-lg col-lg-9 col-md-12 col-sm-12 head__nav">
               <button class="navbar-toggler" type="button" data-toggle="collapse" 
                       data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
                       aria-expanded="false" aria-label="Toggle navigation">
@@ -50,9 +50,9 @@
                       <a class="nav-link" href="pronta.html">Pronta Entrega</a>
                     </li>
                 </ul>
-              </div>
+              </div> <!-- Cierre del div collapse -->
             </nav>
-          </div>
+        </div> <!-- Cierre del div head -->
         <!-- Main -->
         <!-- Principal Contacto -->
         <div class="row">
@@ -65,6 +65,7 @@
                     <p>Necesitas un regalo y querés elegir uno de pronta entrega</p>
                     <p>O cualquier otra consulta o sugerencia.</p>
             </div>
+            <!-- Formulario de contacto y sugerencias -->
             <div class="contacto__formulario col-lg-6 col-sm-11">
                 <form action="/action_page.php">
                   <div class="form-group">
@@ -89,35 +90,30 @@
             </div>
         </div>
         <!-- Foot -->
-        <div class="foot row">
-            <nav class="foot__nav foot__nav--fondo col-lg-6 col-sm-12 col-md-12">
-                <ul class="nav">
-                    <li class="nav-item"><a class="nav-link" href="actualciclo.html">Ciclo Actual</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="online.html">Online</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pronta.html">Pronta Entrega</a></li>
-                </ul>            
-            </nav>
-            <!-- Redes Sociales -->
-            <nav class="foot__navrrss col-lg-6 col-sm-12 col-md-12">
-                <ul class="foot__navrrss">
-                    <li><a href="https://api.whatsapp.com/send?phone=005493513092934"><img class="img-fluid" src="../images/404-whatsapp.png"></a></li>
-                    <li><a href="https://www.instagram.com/eugeqca/"><img class="img-fluid" src="../images/403-instagram.png"></a></li>
-                    <!-- no logro hacer andar el link externo de telegram hay que seguir googleando -->
-                    <li><a href="https://msng.link/o/Eugequimica=tg"><img class="img-fluid" src="../images/406-telegram.png"></a></li>
-                    <li><a href="mailto:eugequimica@gmail.com"><img class="img-fluid" src="../images/388-mail.png"></a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <!-- Script para remover la marca de agua del servidor -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-      $(document).ready(function(){
-      $("a[title|='Hosted on free web hosting 000webhost.com. Host your own website for       FREE.']").css("display", "none");
-      $("img[alt|='www.000webhost.com']").css("display", "none");
-      });
-    </script>
+        <div class="foot">
+            <div class="row">
+              <!-- Nav sin página activa -->
+              <nav class="foot__nav foot__nav--fondo col-lg-6 col-sm-12 col-md-12">
+                  <ul class="nav">
+                      <li class="nav-item"><a class="nav-link" href="actualciclo.html">Ciclo Actual</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                      <li class="nav-item"><a class="nav-link" href="online.html">Online</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pronta.html">Pronta Entrega</a></li>
+                  </ul>            
+              </nav>
+              <!-- Redes Sociales -->
+              <nav class="foot__navrrss col-lg-6 col-sm-12 col-md-12">
+                  <ul class="foot__navrrss">
+                      <li><a href="https://api.whatsapp.com/send?phone=005493513092934"><img class="img-fluid" src="../images/404-whatsapp.png"></a></li>
+                      <li><a href="https://www.instagram.com/eugeqca/"><img class="img-fluid" src="../images/403-instagram.png"></a></li>
+                      <li><a href="mailto:eugequimica@gmail.com"><img class="img-fluid" src="../images/388-mail.png"></a></li>
+                  </ul>
+              </nav>
+            </div> <!-- Cierre de row (primera fila del foot) -->
+            <!-- Copyright -->
+            <p class="row justify-content-end">&copy; Copyright 2021, Espacio Euge Natura</p>
+        </div> <!-- Cierre del foot -->
+    </div> <!-- Cierre del Container Principal -->
     <!-- Script JS para bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>

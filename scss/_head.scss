@@ -25,11 +25,11 @@ a {
         margin: 15px 0;
     }
 }
-.head__fotoyo, .head__logonatura {
+.head__fotoyo {
     width: 10vw;
 }
 @media only screen and (min-width:769px) and (max-width: 990px) {
-    .head__fotoyo, .head__logonatura {
+    .head__fotoyo {
         width: 15vw;
     }
 }
@@ -39,7 +39,7 @@ a {
         font-size: map-get($map: $mapfs, $key: small1);
         }
     }
-    .head__fotoyo, .head__logonatura {
+    .head__fotoyo {
         width: 20vw;
     }
 }

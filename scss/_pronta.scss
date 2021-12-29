@@ -9,45 +9,60 @@
         margin: 5px;
     }
 }
-section.galeria {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 15px;
-}
 h2.galeria__titulo {
     margin: 20px;
     font-size: map-get($map: $mapfs, $key: big2);
     text-decoration: underline;
+    color: $colorppal;
 }
-.galeria {
-    h3 {
-        margin: 20px;
-        color: $colorppal;
-        font-size: map-get($map: $mapfs, $key: medium1);
-        text-shadow: 1px 1px 2px black;
+.card {
+    background-color: $colormosttransparent;
+    text-align: center;
+    h5 {
+        font-weight: bold;
     }
     img {
-        padding: 20px;
+        margin-top: 10px;
     }
 }
+.remate {
+    font-size: map-get($map: $mapfs, $key: big1);
+    @include border;
+    width: 50%;
+    margin: 10px 0;
+    background-color: $colorppal;
+    justify-content: center;
+    a {
+        color: white;
+    }
+}
+.rematetxt {
+    font-weight: bold;
+    font-size: map-get($map: $mapfs, $key: medium1);
+    margin: 5px;
+}
 @media only screen and (min-width:769px) and (max-width: 990px) {
-    h3.txtcarousel {
-        font-size: 18px;
+    .card {
+        img {
+            width: 40vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 }
 @media only screen and (max-width: 768px) {
     .pronta__intro p {
         font-size: map-get($map: $mapfs, $key: medium2);
     }
-    .txtcarousel {
-        h3 {
-            font-size: map-get($map: $mapfs, $key: small1);
-            margin: 0;
-        }
-        p {
-        font-size: map-get($map: $mapfs, $key: small2);
+    .link__remate {
+        font-size: map-get($map: $mapfs, $key: medium2);
+        padding: 10px;
+    }
+    .card {
+        img {
+            width: 40vw;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 }

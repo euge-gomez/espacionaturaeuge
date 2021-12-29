@@ -19,7 +19,6 @@
         margin-left: 25px;
     }
 }
-// Aquí use el @extend como para usarlo, realmente no encontré otro lugar donde hacerlo.
 section.online__introcupones, section.online__linkexterno {
     @extend .causas__whycontent1;
     border-radius: 150px;
@@ -32,3 +31,12 @@ section.online__introcupones, section.online__linkexterno {
         font-size: map-get($map: $mapfs, $key: big2);
     }
 }
+@media only screen and (max-width: 410px) {
+    .online__introcasa {
+        p {
+        margin: 0;
+        padding: 0;
+        }
+    }
+}
+    

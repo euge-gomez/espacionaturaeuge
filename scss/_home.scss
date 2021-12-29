@@ -1,7 +1,12 @@
 // Home
+.head__logonatura {
+    width: 10vw;
+}
 iframe {
     width: 30vw;
     height: 20vw;
+    border-radius: 20px;
+    padding: 5px;
 }
 .causas__whycontent1, .causas__whycontent2 {
     display: flex;
@@ -19,6 +24,10 @@ div.causas__intro {
     font-weight: bold;
     font-size: map-get($map: $mapfs, $key: medium2); 
     margin-top: 15px;
+    p {
+        margin-bottom: 0;
+        margin-top: 5px;
+    }
 }
 h1 {
     color:$colorppal;
@@ -32,6 +41,11 @@ div article.causas__whytxt1, div article.causas__whytxt2 {
     font-size: map-get($map: $mapfs, $key: medium2);
     font-style: italic;
     font-weight: bold;
+}
+@media only screen and (min-width:769px) and (max-width: 990px) {
+    .head__logonatura {
+        width: 15vw;
+    }
 }
 @media only screen and (max-width: 768px) {
     .causas__whycontent1, .causas__whycontent2 {
@@ -49,5 +63,8 @@ div article.causas__whytxt1, div article.causas__whytxt2 {
     }
     iframe {
         width: min-content;
+    }
+    .head__logonatura {
+        width: 20vw;
     }
 }
